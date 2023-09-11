@@ -13,8 +13,6 @@ export default function Home() {
         fetch('https://komiyx.github.io/demoapi/react-product.json')
             .then(response => response.json())
             .then(data => setProductList(data))
-            
-        console.log(productList)
     },[]) 
 
 

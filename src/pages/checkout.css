@@ -1,0 +1,156 @@
+.cartEmpty
+{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    color:  #ff0026;
+}
+
+.cartEmpty .backtohome
+{
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.cartEmpty .backtohome a
+{
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #1c3455;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.cartSection
+{
+    width: 65%;
+}
+
+.checkoutTable
+{
+    width: 100%;
+    text-align: left;
+    border-spacing: 0px;
+}
+
+.checkoutTable tr
+{
+    background-color: #e7d3ff;
+    margin: 20px 20px;
+}
+
+.checkoutTable td
+{
+    padding: 0px;
+    font-size: 16px;
+}
+
+.checkoutTable td .name
+{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.checkoutTable td .price
+{
+    font-weight: 600;
+    font-size: 18px;
+    color: red;
+}
+
+.checkoutTable td .desc
+{
+    font-size: 14px;
+    color: #757575;
+}
+
+
+.checkoutTable img
+{
+    width: 150px;
+    margin: 15px;
+}
+
+.productSubTotal
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.ordersummary
+{
+    width: 20%;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+    border: 3px solid #d2d0d0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ordersummary p
+{
+   margin: 0;
+   margin-bottom: 15px;
+}
+
+
+.ordersummary button
+{
+    font-size: 17px;
+    background-color: #0d3164;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 13px 35px;
+    text-align: center;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.ordertitle
+{
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: underline;
+    color: #843ddb;
+}
+
+.Subtotal , .shippingfee, .total
+{
+    font-size: 20px;
+    color: #757575;
+}
+
+.noShipping , .freeShipping
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: #757575;
+}
+
+.noShipping span
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: red;
+}
+
+.Subtotal span , .shippingfee span
+{
+    color: black;
+    font-size: 22px;
+}
+
+.total span
+{
+    color: red;
+    font-size: 22px;
+    font-weight: 500;
+}
