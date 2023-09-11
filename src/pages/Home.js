@@ -18,7 +18,7 @@ export default function Home() {
 
     return (
         <div>
-            <Title maintitle="Please select your item" />
+            <Title maintitle="The Chinese Tea, add to cart now !" />
             
             <div className="container">
                 {

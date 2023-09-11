@@ -20,7 +20,8 @@ export default function Checkout() {
 
     let handlecheckout =()=>
     {
-        alert('You are done the checkout ✔️, total is: ' + total )
+        alert('You are done the checkout ✔️, total is: ' + total );
+        window.location.reload();
     }
 
   return (
@@ -36,7 +37,6 @@ export default function Checkout() {
                 </div>
             </div>
         }
-
 
         {
             !cartEmpty &&

@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import Home from './Home';
 import QuantityBtn from './QuantityBtn';
 import Title from './Title';
+import './productdetail.css';
 
 export default function ProductDetails() {
 
@@ -26,18 +27,29 @@ export default function ProductDetails() {
         <div>   
             {
                 productdetail &&
-                <div>
+                <div className='productdetail'>
                     <Title maintitle={productdetail.name}/>
-                    <img src={process.env.PUBLIC_URL + '/img/' + productdetail.image} />
-                    <p>Name: {productdetail.name}</p>
-                    <p>Price: {productdetail.price}</p>
-                    <p>description: {productdetail.description}</p>
 
-                    <QuantityBtn productInfo={productdetail}/>
-                    <br/>
-                    <Link to="/">Back to home</Link>
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td align="right">
+                                    <img src={process.env.PUBLIC_URL + '/img/' + productdetail.image} />
+                                </td>
+                                <td width="45%" padding="10">
+                                    <p>Name: {productdetail.name}</p>
+                                    <p>Price: {productdetail.price}</p>
+                                    <p>Description: {productdetail.description}</p> <br/>
+                                    <QuantityBtn productInfo={productdetail} />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             }
+            <div className="backToGoodsListBtn">
+                <Link to="/">Back to home</Link>
+            </div>
         </div>
     )
 }

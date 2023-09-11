@@ -1,0 +1,51 @@
+.backToGoodsListBtn
+{
+    background-color: #1c3455;
+    border-radius: 6px;
+    margin: 50px auto;
+    cursor: pointer;
+    padding: 13px 40px;
+    text-align: center;
+    width: 300px;
+    text-align: center;
+}
+
+.backToGoodsListBtn a
+{
+    font-weight: 600;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.backToGoodsListBtn:hover
+{
+    background-color:  #5881bf;
+}
+
+.productName
+{
+    margin-top:15px;
+    font-weight: bold;
+    font-size: 24px
+}
+
+.productdetail
+{
+    margin: 10px auto;
+    width: 1000px;
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+.productdetail img
+{
+    width:350px;
+}
+
+.productdetail td
+{
+    padding : 10px;
+    display: inline-block;
+
+}
