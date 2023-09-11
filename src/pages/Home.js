@@ -6,8 +6,6 @@ import QuantityBtn from "./QuantityBtn"
 export default function Home() {
 
     let [productList, setProductList] = useState([])
-    let [input , setInput] = useState('')
-
     //useEffect
     useEffect(()=>{
         fetch('https://komiyx.github.io/demoapi/react-product.json')

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import Home from './Home';
 import QuantityBtn from './QuantityBtn';
 import Title from './Title';
 import './productdetail.css';
 
 export default function ProductDetails() {
 
-    let params = useParams();
+    let params = useParams()
     let [productdetail, setproductdetail] = useState(null)
 
     useEffect(()=>{
@@ -20,7 +19,7 @@ export default function ProductDetails() {
                 })
                 setproductdetail(productInfo)
             })
-    },[]) 
+    },[params.id]) 
 
 
     return (
@@ -34,7 +33,7 @@ export default function ProductDetails() {
                         <tbody>
                             <tr>
                                 <td align="right">
-                                    <img src={process.env.PUBLIC_URL + '/img/' + productdetail.image} />
+                                    <img src={process.env.PUBLIC_URL + '/img/' + productdetail.image}  alt={productdetail.name}/>
                                 </td>
                                 <td width="45%" padding="10">
                                     <p>Name: {productdetail.name}</p>
