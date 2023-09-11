@@ -10,7 +10,7 @@ export default function Home() {
 
     //useEffect
     useEffect(()=>{
-        fetch('https://hoyinleung.github.io/demoapi/react-basic-product.json')
+        fetch('https://komiyx.github.io/demoapi/react-product.json')
             .then(response => response.json())
             .then(data => setProductList(data))
             
@@ -22,17 +22,18 @@ export default function Home() {
         <div>
             <Title maintitle="Please select your item" />
             
-            <div>
+            <div className="container">
                 {
                     productList.map(product=>(
-                        <div key={product.id}>
-                            {product.name}<br/>
-                            {product.price}<br/>
+                        <div key={product.id} className="productSection">
                             <Link to={'/product/'+product.id}>
-                            <img src={process.env.PUBLIC_URL+'/img/'+product.image} alt={product.name} />
+                                <img src={process.env.PUBLIC_URL+'/img/'+product.image} alt={product.name} />
                             </Link>
                             <br/>
-                            {product.description}<br/>
+                            {product.name}<br/>
+                            <div className="productprice">
+                                RM {product.price} / per kg
+                            </div>
                             <QuantityBtn productInfo={product}/>
                         </div>
                     ))

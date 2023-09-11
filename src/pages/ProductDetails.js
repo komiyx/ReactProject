@@ -10,7 +10,7 @@ export default function ProductDetails() {
     let [productdetail, setproductdetail] = useState(null)
 
     useEffect(()=>{
-        fetch('https://hoyinleung.github.io/demoapi/react-basic-product.json')
+        fetch('https://komiyx.github.io/demoapi/react-product.json')
             .then(response => response.json())
             .then(data => {
                 let productInfo = data.find((element) =>

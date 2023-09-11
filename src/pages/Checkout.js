@@ -15,7 +15,7 @@ export default function Checkout() {
     const freeShippingfee = 99; 
 
   return (
-    <div>
+    <div className=''>
         <Title maintitle="Check Out"/>
 
         {

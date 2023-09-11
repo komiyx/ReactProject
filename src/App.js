@@ -16,7 +16,6 @@ function App() {
           <CartContext.Provider value={{cartItems,setCartItems}}>
             <div className='navbar'>
               <Link to="/">Home</Link>
-              <Link to="/product_detail">Product</Link>
               <Link to="/checkout">CheckOut</Link>
             </div>
 
