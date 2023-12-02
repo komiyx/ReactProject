@@ -1,6 +1,7 @@
 # ReactProject
 
-Visit https://beamish-dusk-c1a9f1.netlify.app 
+It is a single page application made with ReactJS, CSS etc...
 
-##
-A e-commerce website which selling chinese tea. 
+## Live Demo of this website :
+Demo Link [https://beamish-dusk-c1a9f1.netlify.app]
+🚀
